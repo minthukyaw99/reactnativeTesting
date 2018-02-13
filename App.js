@@ -43,7 +43,7 @@ export default class App extends React.Component {
 
 const uiTheme = {
     palette: {
-        primaryColor: COLOR.green500,
+        primaryColor: '#039be5',
     },
     toolbar: {
         container: {

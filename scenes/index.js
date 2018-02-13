@@ -18,8 +18,8 @@ const Index = TabNavigator(
         {
             initialRouteName: 'Home',
             tabBarOptions: {
-                activeTintColor: '#e53935',
-                inactiveTintColor: '#ef9a9a',
+                activeTintColor: '#039be5',
+                inactiveTintColor: '#4fc3f7',
             },
             animationEnabled: true,
             navigationOptions: ({ navigation }) => ({

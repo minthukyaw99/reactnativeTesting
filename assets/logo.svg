@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="524 272 200 88">
+<g data-item-type="shape" data-item="Shape" data-logo-item="" id="logo__item--shape_1" class="logo__item">
+    <g class="logo__item__inner" transform="translate(525.7999992370605 265.79999923706055) scale(1 1) rotate(0 0 0)">
+        
+<g>
+	<circle fill="#ffffff" cx="43" cy="51" r="41.2" data-part-id="logo__item--shape_1__0"></circle>
+</g>
+
+    </g>
+</g><g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
+                <g class="logo__item__inner" transform="translate(614 325) scale(0.7523809523809524 0.7523809523809524) rotate(0 0 0)">
+                    <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Comfortaa" font-size="32px" fill="#ffffff" letter-spacing="0" font-weight="bold" font-style="italic" data-font-family="Comfortaa" data-font-weight="bold" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-filename="comfortaa-bold-normal">Express</text>
+                </g>
+            </g><g data-item-type="text" data-item="Tagline" id="logo__item--tagline_1" class="logo__item" data-item-clone="true">
+                <g class="logo__item__inner" transform="translate(544 325) scale(0.7030736516528127 0.7030736516528127) rotate(0 0 0)">
+                    <text data-part-id="logo__item--tagline_1__0" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Helvetica, Arial, sans-serif" font-size="32px" fill="#d50000" letter-spacing="0" font-weight="bold" font-style="normal" data-font-weight="bold" data-font-style="normal"  data-font-filename="montserrat-bold-normal">Zuko</text>
+                </g>
+            </g></svg>
