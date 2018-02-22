@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import {StyleSheet, Text, View, Image, TextInput, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import {Card, Button} from 'react-native-material-ui';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -9,8 +9,10 @@ class HomeScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: ''
+            username: '',
+            password: ''
         }
+        this.submitLogin = this.submitLogin.bind(this);
     }
 
     static navigationOptions = {
@@ -24,8 +26,14 @@ class HomeScreen extends Component {
         },
     };
 
+    submitLogin() {
+        Keyboard.dismiss();
+
+    }
+
     render() {
         return (
+            <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
             <View style={styles.loginContainer}>
                 <CardSection>
                     <View style={styles.loginCard}>
@@ -35,10 +43,9 @@ class HomeScreen extends Component {
                         <View style={styles.texInputWrapper}>
                             <TextInput
                                 style={styles.textInputStyle}
-                                onChangeText={(text) => this.setState({text})}
-                                value={this.state.text}
+                                onChangeText={(username) => this.setState({username})}
+                                value={this.state.username}
                                 placeholder="abc@example.com"
-                                placeholderTextColor='#e0e0e0'
                                 tintColor='black'
                             />
                         </View>
@@ -50,16 +57,24 @@ class HomeScreen extends Component {
                         <View style={styles.texInputWrapper}>
                             <TextInput
                                 style={styles.textInputStyle}
-                                onChangeText={(text) => this.setState({text})}
-                                value={this.state.text}
+                                onChangeText={(password) => this.setState({password})}
+                                value={this.state.password}
+                                placeholder="*******"
+                                secureTextEntry={true}
                             />
                         </View>
                     </View>
                     <View style={{paddingBottom: 20}}>
-                        <Button icon='exit-to-app' raised={true} text={'Log In'} style={{ container: { backgroundColor: '#d81b60'}, text: { color: '#fff'}}} />
+                        <Button
+                            icon='exit-to-app'
+                            raised={true} text={'Log In'}
+                            style={{ container: { backgroundColor: '#d81b60'}, text: { color: '#fff'}}}
+                            onPress={this.submitLogin}
+                        />
                     </View>
                 </CardSection>
             </View>
+            </TouchableWithoutFeedback>
         )
     }
 }
@@ -89,7 +104,8 @@ const styles = StyleSheet.create({
         height: 40,
         borderColor: '#fff',
         borderWidth: 0.5,
-        borderRadius: 5
+        borderRadius: 5,
+        padding:10
     },
     backgroundImageStyle: {
         width: '100%',
